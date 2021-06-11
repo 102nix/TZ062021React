@@ -1,0 +1,70 @@
+.rowform{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1050;
+    transition: opacity 200ms ease-in; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title{
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #fff;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__form{
+      padding: 1px 3px 40px 90px;
+      margin: 15px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      position: relative;
+      .btn-close{
+        background-color: #fff;
+        color: #000;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+        margin-top: 1px;
+        margin-left: 390px;
+        cursor: pointer;
+        &:hover{
+          background-color: rgb(182, 179, 179);
+          transition: all .3s;
+        }
+      }
+    }
+    .actions{
+      margin-top: 35px;
+      text-align: center;
+      .btn{
+        padding: 15px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+          background-color: rgb(184, 180, 180);
+          transition: all .4s;
+        }
+      }
+      .btn-disabled{
+        padding: 15px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+      }
+    }
+  }

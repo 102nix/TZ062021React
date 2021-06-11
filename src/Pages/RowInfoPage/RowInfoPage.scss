@@ -1,0 +1,37 @@
+.home__row{
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgb(133, 129, 129);
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgb(133, 129, 129);;
+  &-title{
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  textarea{
+    margin: 5px 0 10px 0;
+    padding: 20px;
+    width: 450px;
+    height: 150px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    background-color: rgb(184, 181, 181);
+    resize: none;
+  }
+  &-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    div{
+      margin: 3px auto;
+      padding: 0 15px;
+      text-align: left;
+      width: 50%;
+    }
+  }
+}

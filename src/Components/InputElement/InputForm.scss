@@ -1,0 +1,35 @@
+.container-input{
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+  input{
+    flex: 0 0 auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    transform: scale(1);
+    transition: transform 0.3s ease 0s;
+    &:focus{
+      transform: scale(1.05);
+    }
+  }
+  .label{
+    flex: 0 0 80px;
+    margin-right: 35px;
+    text-align: center;
+  }
+}
+.container-input:before{
+  content: '*';
+  position: relative;
+  top: 3px;
+  left: 95px;
+  color: red;
+}
+
+.error{
+  text-align: center;
+  color: rgb(121, 2, 2);
+  font-size: 15px;
+}

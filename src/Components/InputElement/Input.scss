@@ -1,0 +1,31 @@
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  input{
+    flex: 0 0 300px;
+    border: 1px solid rgb(240, 239, 239);
+    width: 100%;
+    border-radius: 25px;
+    margin-left: 1rem;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #fff;
+  }
+  button{
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #fff;
+    &:hover{
+      transition: all .4s;
+      background-color: rgb(150, 148, 148);
+    }
+  }
+}
+

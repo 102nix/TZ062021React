@@ -1,0 +1,77 @@
+.tablepage{
+  &__link{
+    display: inline-block;
+    margin-top: 10px;
+    &:hover{
+      box-shadow: 2px 2px 2px 2px #000;
+      transition: all .2s;
+    }
+  }
+  &__actions{
+    text-align: center;
+    margin-bottom: 10px;
+    .btn-add{
+      padding: 15px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      background-color: #fff;
+      &:hover{
+        background-color: #141414;
+        color:#fff;
+        transition: all .4s;
+      }
+    }
+  }
+  &__paginate{
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    cursor: pointer;
+    .pages-number{
+      font-size: 15px;
+      padding: 5px;
+    }
+    .current-page{
+      font-size: 21px;
+    }
+  }
+  &__table{
+    box-shadow: 5px 5px 5px rgb(133, 129, 129);
+    .table {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #dddddd;
+      border-collapse: collapse; 
+    }
+    .table tr{
+      cursor: pointer;
+      &:hover{
+        transition: all .3s;
+        background-color: rgb(150, 148, 148);
+      }
+    }
+    .table th {
+      font-weight: bold;
+      padding: 10px;
+      background: #141414;
+      color: #fff;
+      border: 1px solid #dddddd;
+      cursor: pointer;
+    }
+    .table td {
+      border: 1px solid #dddddd;
+      padding: 7px 5px;
+      text-align: center;
+    }
+    .table th.sorted[data-order="1"]::after {
+      content: "▲"
+    }
+    
+    .table th.sorted[data-order="-1"]::after {
+      content: "▼"
+    }
+  }
+}
