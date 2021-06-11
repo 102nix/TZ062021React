@@ -54,6 +54,7 @@
             <small 
               className={page === currentPage ? 'current-page' : 'pages-number'}
               onClick={() => numberPaginate([page, page + 49]) }
+              key={page}
             >
               {page}
             </small>

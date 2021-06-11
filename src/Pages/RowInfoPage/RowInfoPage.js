@@ -7,7 +7,7 @@ export const RowInfoPage = ({firstName, lastName, description, address}) => {
       <div className="home__row-title">
         Выбран пользователь <b>{firstName} {lastName}</b>
       </div>
-      <textarea>{description}</textarea>
+      <textarea defaultValue={description} />
       <div className="home__row-info">
         <div>Адрес проживания: <b>{address.streetAddress}</b></div> 
         <div>Город: <b>{address.city}</b></div>

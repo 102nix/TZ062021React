@@ -24,7 +24,6 @@ export const TablePage = (props) => {
     toggleModal,
     
   } = props
-  console.log(data.length)
 
     return (
       <>
@@ -85,8 +84,8 @@ export const TablePage = (props) => {
                     {
                       data
                       .slice(start, end)
-                        .map(element => (
-                          <tr onClick={() => showRowFromTable(element)} key={element.id}>
+                        .map((element, i) => (
+                          <tr onClick={() => showRowFromTable(element)} key={i}>
                             <td>{element.id}</td>
                             <td>{element.firstName}</td>
                             <td>{element.lastName}</td>
